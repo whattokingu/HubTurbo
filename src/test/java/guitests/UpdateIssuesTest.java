@@ -1,6 +1,5 @@
-package unstable;
+package guitests;
 
-import guitests.UITest;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 
