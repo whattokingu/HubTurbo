@@ -113,10 +113,9 @@ public class BoardAutoCreatorTest extends UITest {
 
         assertEquals(panelInfos.get(0).getPanelFilter(), "repo:" + SAMPLE_REPO_NAME + " " +
                 "(is:issue OR is:pr) is:open");
-        assertEquals(panelInfos.get(1).getPanelFilter(), "repo:" + SAMPLE_REPO_NAME + " " +
-                "(is:issue OR is:pr) is:open");
-        assertEquals(panelInfos.get(2).getPanelFilter(), "repo:" + SAMPLE_REPO_NAME + " " +
-                "(is:issue OR is:pr) is:open");
+        assertEquals(panelInfos.get(1).getPanelFilter(), "repo:" + SAMPLE_REPO_NAME + " " + "milestone:V5 sort:status");
+        assertEquals(panelInfos.get(2).getPanelFilter(),
+                "repo:" + SAMPLE_REPO_NAME + " " + "label:\"urgent\" assignee:dariusf");
 
         assertEquals(panelInfos.get(0).getPanelName(), "Open issues and PR's");
         assertEquals(panelInfos.get(1).getPanelName(), "V5 Milestone");
